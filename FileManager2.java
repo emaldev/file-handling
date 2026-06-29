@@ -39,10 +39,14 @@ public class FileManager2{
         
 
         try(FileWriter myfile = new FileWriter(fileName)){
-        
-       
-        for(int i = 0 ; i < 3; i++){
+            
+            System.out.println("How many lines do you want to write down?");
+             int size = Scane.nextInt();
+             Scane.nextLine();
+
+        for(int i = 0 ; i < size; i++){
             System.out.println("Enter three Line notes Hear..");
+            System.out.println("Write Line of " + (i + 1) + ": " );
           String  Notes = Scane.nextLine();
           myfile.write(Notes + "\n ");
         }
