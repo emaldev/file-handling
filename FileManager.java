@@ -13,7 +13,7 @@ public class FileManager {
     public static void createFile(String fileName){
         try{
             System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            File myFile = new File("hello.txt");
+            File myFile = new File(fileName);
             if(myFile.createNewFile()){
                 System.out.println("Creat file .");
             }else{
@@ -48,7 +48,7 @@ public class FileManager {
     public static void readFile(String fileName){
         try{
              System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            File myFile = new File("hello.txt");
+            File myFile = new File(fileName);
             Scanner input = new Scanner(myFile);
             int count = 0;
             System.out.println("This is Information file : ");
