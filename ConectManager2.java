@@ -104,7 +104,7 @@ public class ConectManager2 {
                 
                 
                 String line = input.nextLine();
-                if(line.startsWith(NameToFound + ",")){
+                if(line.contains(NameToFound + ",")){
                     System.out.println("target audience :  " + line);
                     found = true;
                     break;
